@@ -1,2 +1,2 @@
 # gradle-core
-Project encapsulating common gradle build scripts to bootstrap application quickly
+Project encapsulating common gradle build scripts to bootstrap application quickly initial
