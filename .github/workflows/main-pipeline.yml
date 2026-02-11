@@ -4,12 +4,6 @@ on:
   push:
     branches: [main]
 
-env:
-  GPG_SIGNING_KEY: ${{ secrets.GPG_SIGNING_KEY }}
-  GPG_SIGNING_PASSPHRASE: ${{ secrets.GPG_SIGNING_PASSPHRASE }}
-  GRADLE_API_KEY: ${{ secrets.GRADLE_API_KEY }}
-  GRADLE_API_SECRET: ${{ secrets.GRADLE_API_SECRET }}
-
 jobs:
   build:
     runs-on: ubuntu-latest
