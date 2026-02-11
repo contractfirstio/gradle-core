@@ -15,12 +15,9 @@ If you wish to use this build script for production use then we recommend three 
 Usage: https://plugins.gradle.org/plugin/io.contractfirst.kotlin 
 ```
 plugins {
-    id("io.contractfirst.kotlin") version "3.0.0"
+    id("io.contractfirst.kotlin") version "1.0.0"
 }
 ```
 | Plugin version | Kotlin version | JVM version | JUnit |
 |----------------|----------------|-------------|-------|
-| 1.0.0          | 1.8.0          | 17          | 4     |    
-| 1.0.1          | 1.8.0          | 17          | 5     |
-| 2.0.0          | 1.8.0          | 19          | 5     |
-| 3.0.0          | 1.9.22         | 21          | 5     |
+| 1.0.0          | 1.9.22         | 21          | 5     |
