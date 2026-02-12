@@ -18,15 +18,12 @@ dependencies {
 
 gradlePlugin {
     website.set("https://github.com/contractfirstio")
-    vcsUrl.set("https://github.com/contractfirstio/gradle-core")
-
-    plugins {
-        create("contractFirstKotlin") {
-            id = "io.contractfirst.kotlin"
-            displayName = "ContractFirst Kotlin Bootstrap"
-            description = "Encapsulates a common Kotlin build configuration"
-            implementationClass = "io.contractfirst.gradle.ContractFirstKotlinPlugin"
-            tags.set(listOf("kotlin", "gradle", "bootstrap", "build"))
+    vcsUrl.set("https://github.com/contractfirstio/gradle-core.git")
+    plugins.all {
+        if(this.id == "io.contractfirst.kotlin"){
+            displayName = "Kotlin Code Bootup"
+            description = "Plugin that encapsulates a common Kotlin build script"
+            tags.set(listOf("build"))
         }
     }
 }
