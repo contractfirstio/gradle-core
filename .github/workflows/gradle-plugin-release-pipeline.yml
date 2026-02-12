@@ -29,4 +29,4 @@ jobs:
           NEW_VERSION=$(echo "${GITHUB_REF}" | cut -d "/" -f3)
           echo "New version: ${NEW_VERSION}"
           echo "Github username: ${GITHUB_ACTOR}"
-          ./gradlew -PbuildVersion=${NEW_VERSION} -Pgradle.publish.key=${GRADLE_API_KEY} -Pgradle.publish.secret=${GRADLE_API_SECRET} build publishPlugins --info
+          ./gradlew -PbuildVersion=${NEW_VERSION} -Pgradle.publish.key=${GRADLE_API_KEY} -Pgradle.publish.secret=${GRADLE_API_SECRET} build publishPlugins --info --no-configuration-cache
