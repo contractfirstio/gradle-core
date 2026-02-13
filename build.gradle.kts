@@ -21,7 +21,7 @@ gradlePlugin {
     vcsUrl.set("https://github.com/contractfirstio/gradle-core.git")
     plugins.all {
         if(this.id == "io.contractfirst.kotlin"){
-            displayName = "Kotlin Code Bootup"
+            displayName = "Contract First Kotlin Plugin"
             description = "Plugin that encapsulates a common Kotlin build script"
             tags.set(listOf("build"))
         }
@@ -33,7 +33,7 @@ publishing {
 
         pom {
             name.set("ContractFirst Gradle Plugin")
-            description.set("Common Gradle bootstrap plugin for ContractFirst projects")
+            description.set("Plugin that encapsulates a common Kotlin build scripts")
             url.set("https://github.com/contractfirstio/gradle-core")
 
             licenses {
